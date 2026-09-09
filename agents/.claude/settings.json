@@ -1,0 +1,29 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-settings.json",
+  "permissions": {
+    "allow": [
+      "Bash(mvn -o test)",
+      "Bash(mvn -o compile)",
+      "Bash(mvn -o package)",
+      "Read"
+    ],
+    "deny": [
+      "Bash(rm -rf *)"
+    ]
+  },
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "Write|Edit",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "\"$CLAUDE_PROJECT_DIR\"/.claude/hooks/check-money-type.sh",
+            "timeout": 15,
+            "statusMessage": "Checking money types..."
+          }
+        ]
+      }
+    ]
+  }
+}

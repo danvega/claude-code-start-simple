@@ -1,0 +1,5 @@
+target/
+.idea/
+
+# Personal Claude Code settings stay on your machine
+.claude/settings.local.json

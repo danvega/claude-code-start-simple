@@ -1,0 +1,55 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-settings.json",
+  "model": "sonnet",
+  "permissions": {
+    "allow": [
+      "Bash(./mvnw *)",
+      "Bash(mvn test)",
+      "Bash(mvn verify)",
+      "Bash(java *)",
+      "Bash(javac *)",
+      "Bash(git status)",
+      "Bash(git diff *)",
+      "Bash(git log *)",
+      "Read"
+    ],
+    "deny": [
+      "Bash(rm -rf *)",
+      "Bash(mvn deploy *)",
+      "Bash(git push --force *)",
+      "Read(./.env)",
+      "Read(./src/main/resources/application-prod.properties)"
+    ],
+    "ask": [
+      "Bash(git commit *)",
+      "Bash(git push *)"
+    ],
+    "defaultMode": "default"
+  },
+  "env": {
+    "MAVEN_OPTS": "-Xmx2g",
+    "SPRING_PROFILES_ACTIVE": "test"
+  },
+  "hooks": {
+    "PostToolUse": [
+      {
+        "matcher": "Write|Edit",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "jq -r '.tool_response.filePath // .tool_input.file_path' | { read -r f; case \"$f\" in *.java) ./mvnw -q spotless:apply -DspotlessFiles=\"$f\" ;; esac; } 2>/dev/null || true",
+            "timeout": 60,
+            "statusMessage": "Formatting Java source..."
+          }
+        ]
+      }
+    ]
+  },
+  "attribution": {
+    "commit": ""
+  },
+  "enableAllProjectMcpServers": false,
+  "enabledMcpjsonServers": [
+    "postgres"
+  ]
+}
