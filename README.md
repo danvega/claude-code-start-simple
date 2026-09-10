@@ -19,7 +19,7 @@ Each folder has its own README with the steps I run on stage.
 | [first-session](first-session/) | The basic loop, the surfaces, permissions |
 | [settings](settings/) | CLAUDE.md and how the two `.claude` folders stack |
 | [skills-mcp](skills-mcp/) | Skills, popular MCP servers, and DVaaS |
-| [goal](goal/) | `/goal` and auto mode, working until the tests pass |
+| [goal](goal/) | `/goal`, completing PLAN.md with unit and integration tests verified after each task |
 | [spring-petclinic](spring-petclinic/) | The shared app the demos run against |
 
 ## Resources
@@ -58,3 +58,11 @@ Mine
 - https://github.com/danvega/skills
 - https://www.danvega.dev/mcp
 - GitHub Repo
+
+## Notes
+- Section 00: Completed at 5
+- Section 01: Completed at 8:30 
+- Section 02: Completed at 21:00 (Demo 1)
+- Section 03: Completed at 32:00 (Demo 2: Permissions)
+- Section 04: Completed at 45:00 (Demo 3: Skills and MCP)
+- section 05: Completed at 55:00 (Demo 4: Agents)

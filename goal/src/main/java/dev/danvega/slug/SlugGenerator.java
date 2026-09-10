@@ -1,20 +1,22 @@
 package dev.danvega.slug;
 
+import java.util.Locale;
+
 /**
  * Turns a blog post title into a URL slug.
  *
- * The tests in SlugGeneratorTest are the spec. Read them before you start.
+ * This starter handles casing and whitespace. See PLAN.md for the remaining work.
  */
 public final class SlugGenerator {
 
-	/** A slug is never longer than this. */
+	/** The maximum length to enforce in PLAN.md's length task. */
 	public static final int MAX_LENGTH = 50;
 
 	private SlugGenerator() {
 	}
 
 	public static String slugify(String title) {
-		throw new UnsupportedOperationException("Not implemented yet");
+		return title.strip().toLowerCase(Locale.ROOT).replaceAll("\\s+", "-");
 	}
 
 }
