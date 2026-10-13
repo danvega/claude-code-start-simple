@@ -12,7 +12,7 @@ You don't need to learn everything at once. You need to know what matters first 
 
 ## Demos
 
-Each folder has its own README with the steps I run on stage.
+Each folder has its own README with the steps to follow along.
 
 | Demo | What it covers |
 | --- | --- |

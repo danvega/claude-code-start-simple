@@ -14,7 +14,7 @@ Settings files get a short look here. The full walkthrough lives in the `setting
 
 ## 1. Plain Java program
 
-You are already in a Claude session in this folder. Paste this prompt.
+Start a Claude session in this folder and paste this prompt.
 
 ```text
 Create a Hello World program in Java that uses unnamed classes and run it.
@@ -35,17 +35,19 @@ Exit and start again with the flag.
 claude --dangerously-skip-permissions
 ```
 
-TWO HYPHENS. Watch autocorrect. Type it slowly on stage or paste it.
+Note the two hyphens. Autocorrect likes to turn them into a dash.
 
 Ask for the same program. No prompts this time.
 
 ## 4. Plan mode
 
-Start a normal session again. Press **Shift + Tab, twice**. The mode indicator changes to plan mode.
+Start a normal session again.
 
 ```
 claude
 ```
+
+Press **Shift + Tab, twice**. The mode indicator changes to plan mode.
 
 Then ask for something with a few moving parts.
 
@@ -59,14 +61,14 @@ Explore, clarify, plan, approve. Use plan mode when you want to see the thinking
 
 ## 5. Settings side by side
 
-Open both files in the editor, side by side. Do not go deep. That is the `settings/` demo.
+Compare the two settings files. The `settings/` demo covers them in depth.
 
 | File | Tracked in git | Holds |
 | --- | --- | --- |
 | `.claude/settings.json` | Yes, committed | Team rules that travel with the project |
 | `.claude/settings.local.json` | No, gitignored | Your personal overrides and anything secret |
 
-Talking point: the project file is the shared contract. The local file is yours.
+The project file is the shared contract. The local file is yours.
 
 ## 6. `/permissions`
 
@@ -74,6 +76,6 @@ Talking point: the project file is the shared contract. The local file is yours.
 /permissions
 ```
 
-Shows the allowed, ask, and deny lists that are active right now. Add a rule from here and show that the next matching command runs without a prompt.
+Shows the allowed, ask, and deny lists that are active right now. Add a rule from here, and the next matching command runs without a prompt.
 
-Talking point: permissions are not all or nothing. Allow the safe stuff, ask on the rest, deny what should never run.
+Permissions are not all or nothing. Allow the safe stuff, ask on the rest, deny what should never run.

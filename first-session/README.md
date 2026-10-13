@@ -12,11 +12,11 @@ Section 02 of the talk. This demo opens Claude Code for the first time and walks
 
 ## 1. Three ways in
 
-Show the terminal, the desktop app, and the web app. Point at each, say what it is, and move on. Do not linger. The rest of the demo runs in the terminal.
+Claude Code runs in the terminal, the desktop app, and the web app. The rest of this demo uses the terminal.
 
 ## 2. Starting up
 
-Show each of these. Say what it does in one line.
+The commands you will use most:
 
 | Command | What it does |
 | --- | --- |
@@ -28,7 +28,7 @@ Show each of these. Say what it does in one line.
 
 ## 3. Tour the screen
 
-Name the parts. The input box, the status line, the permission mode indicator, the model name. Once the audience knows the names, the rest of the talk gets easier.
+Learn the parts: the input box, the status line, the permission mode indicator, and the model name. Once you know the names, the rest gets easier.
 
 ## 4. `/status` and `/help`
 
@@ -42,7 +42,7 @@ Shows the version, the model, the working directory, and the auth method. This i
 /help
 ```
 
-Lists every slash command. Tell the audience they never need to memorize the list. It is one command away.
+Lists every slash command. You never need to memorize the list. It is one command away.
 
 ## 5. `/model` and `/effort`
 
@@ -50,7 +50,7 @@ Lists every slash command. Tell the audience they never need to memorize the lis
 /model
 ```
 
-Switch between models. Show the picker.
+Switch between models.
 
 ```
 /effort
@@ -58,7 +58,7 @@ Switch between models. Show the picker.
 
 Set how hard the model thinks before it answers.
 
-Talking point: a subscription does not make it all free. Bigger models and higher effort cost more tokens and more time. Pick what the task needs.
+A subscription does not make it all free. Bigger models and higher effort cost more tokens and more time. Pick what the task needs.
 
 ## 6. PetClinic: "Read this project"
 
@@ -73,15 +73,15 @@ claude
 Give a new developer a quick overview of this project. Cover what it does, key dependencies, architecture, how the code is organized, and how to build and run it. Use a short heading for each, with 2-3 bullets under it. No code.
 ```
 
-Talking point: a clear prompt gets a clear answer. Say who the answer is for, what you want covered, and how long it should be.
+A clear prompt gets a clear answer. Say who the answer is for, what you want covered, and how long it should be.
 
-The first permission prompt lands here. Let it sit a beat. Let the audience see it before you answer.
+The first permission prompt shows up here. Read it before you answer.
 
-Talking point: Claude asks before it acts. This is the trust loop. You decide what it can touch.
+Claude asks before it acts. This is the trust loop. You decide what it can touch.
 
 ## 7. Dictation
 
-Show voice input. Hold the dictation key, describe a task out loud, release. Quick prompts are often faster spoken than typed.
+Claude Code takes voice input. Hold the dictation key, describe a task out loud, release. Quick prompts are often faster spoken than typed.
 
 ## 8. `/context`
 
@@ -89,9 +89,9 @@ Show voice input. Hold the dictation key, describe a task out loud, release. Qui
 /context
 ```
 
-Shows what is filling the context window right now. Callback to the vocabulary section: tokens and the context window.
+Shows what is filling the context window right now.
 
-Ask the audience: what is the system prompt costing before you type a single word? Point at the split between what the agent knows and what the harness adds around it.
+Notice what the system prompt costs before you type a single word. Look at the split between what the agent knows and what the harness adds around it.
 
 ## 9. `/clear`
 
@@ -99,4 +99,4 @@ Ask the audience: what is the system prompt costing before you type a single wor
 /clear
 ```
 
-Wipe the context and start fresh. End the demo here. The next section builds on a clean session.
+Wipe the context and start fresh. Do this between unrelated tasks.

@@ -82,9 +82,9 @@ Setting the goal starts work immediately. The plan makes “output shown for eac
 one” concrete: after each task, show both test summaries and `BUILD SUCCESS`,
 then record the test names and results under completion evidence in `PLAN.md`.
 
-## What to show on stage
+## What to look for
 
-1. Open `PLAN.md` and point out the four unchecked tasks and definition of complete.
+1. Open `PLAN.md` and look at the four unchecked tasks and definition of complete.
 2. Run the goal. Follow one task through implementation, new tests in both layers,
    a successful `./mvnw verify`, and its checkbox and evidence update.
 3. Show that Claude continues through the remaining tasks without another prompt.
