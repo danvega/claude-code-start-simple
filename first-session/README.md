@@ -66,8 +66,14 @@ Move into the PetClinic project and ask Claude to read it.
 
 ```
 cd ../spring-petclinic/app
-claude "Read this project and tell me what it does"
+claude
 ```
+
+```
+Give a new developer a quick overview of this project. Cover what it does, key dependencies, architecture, how the code is organized, and how to build and run it. Use a short heading for each, with 2-3 bullets under it. No code.
+```
+
+Talking point: a clear prompt gets a clear answer. Say who the answer is for, what you want covered, and how long it should be.
 
 The first permission prompt lands here. Let it sit a beat. Let the audience see it before you answer.
 

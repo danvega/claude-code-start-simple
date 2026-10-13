@@ -19,6 +19,7 @@ Each folder has its own README with the steps I run on stage.
 | [first-session](first-session/) | The basic loop, the surfaces, permissions |
 | [settings](settings/) | CLAUDE.md and how the two `.claude` folders stack |
 | [skills-mcp](skills-mcp/) | Skills, popular MCP servers, and DVaaS |
+| [agents](agents/) | Demo 04: a code-reviewer subagent that finds bugs the passing tests miss |
 | [goal](goal/) | `/goal`, completing PLAN.md with unit and integration tests verified after each task |
 | [spring-petclinic](spring-petclinic/) | The shared app the demos run against |
 

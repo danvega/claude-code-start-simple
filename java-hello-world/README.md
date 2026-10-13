@@ -14,10 +14,10 @@ Settings files get a short look here. The full walkthrough lives in the `setting
 
 ## 1. Plain Java program
 
-Start a session in this folder and ask for something small.
+You are already in a Claude session in this folder. Paste this prompt.
 
-```
-claude "Create a Hello World program in Java that uses unnamed classes and run it."
+```text
+Create a Hello World program in Java that uses unnamed classes and run it.
 ```
 
 Claude will ask permissions for everything it needs to do to achieve the task. This is the default permissions mode, and it's something you want to avoid going forward because it will slow you down.
@@ -68,7 +68,7 @@ Open both files in the editor, side by side. Do not go deep. That is the `settin
 
 Talking point: the project file is the shared contract. The local file is yours.
 
-## 5. `/permissions`
+## 6. `/permissions`
 
 ```
 /permissions

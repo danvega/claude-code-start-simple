@@ -5,86 +5,24 @@ Section 04 of the talk. Two ways to make Claude Code yours.
 A skill teaches Claude **how you do something**. An MCP server gives Claude
 **access to something real**. Skills are your process. MCP is your data.
 
-## Skills that I use every day
+## Skills
 
 A skill is a folder with a `SKILL.md` in it. The description tells Claude when to
 load it. Nothing loads until it is needed.
 
 ```
 ~/.claude/skills/            <- yours, in every project
-  video-packaging/
+  my-skill/
     SKILL.md
 my-project/.claude/skills/   <- the project's, checked in for the team
 ```
 
 Run `/skills` to see what is loaded.
 
-### What is in mine
+Skills are not just for code. Any task you repeat can be one: writing a post,
+editing a video, prepping a podcast episode.
 
-I have 36 of these. They live in one repo, grouped by the kind of work.
-
-**[github.com/danvega/skills](https://github.com/danvega/skills)**
-
-#### dev
-
-Everyday development. These are the ones worth stealing first.
-
-| Skill | What it does |
-| --- | --- |
-| `readme` | Writes a README that fits the project and its readers |
-| `pr-description` | Turns a diff into a PR title and description |
-| `code-review` | Finds real bugs in a diff, with file references |
-| `bug-repro` | Reproduces a bug, captures it in a test, then fixes it |
-| `code-tour` | Traces a real request through the code |
-| `release-notes` | Turns changes between two versions into notes |
-
-#### ship
-
-A process for new demos and small products. `PRODUCT.md` holds the scope.
-
-`ship-shape` to narrow the idea, `ship-mvp` to write it down, `ship-stack` for the
-technical calls, `ship-prototype`, `ship-verify`, `ship-feature`, `ship-retro`.
-
-Not seven required stages. Start wherever the project actually is.
-
-#### spring
-
-| Skill | What it does |
-| --- | --- |
-| `jackson-3` | Jackson 3 in Boot 4, the new packages and changed defaults |
-| `modular-auto-config` | Why your auto-config vanished in the Boot 4 upgrade |
-
-#### blog, newsletter, podcast, video
-
-The workflows behind danvega.dev, Spring Office Hours, and the YouTube channel.
-This is where most of my skills are, and it is the part people do not expect.
-
-| Skill | What it does |
-| --- | --- |
-| `blog-new-post` | Drafts a post in my voice, with the site's frontmatter |
-| `blog-seo-opportunities` | Ranks what to write next using Search Console data |
-| `spring-office-hours-edit` | Cuts a raw stream down to the podcast mp3 |
-| `video-ideation` | Finds and ranks video ideas from real demand signals |
-| `video-packaging` | Turns an idea into a title, thumbnail brief, and hook |
-| `video-shorts` | Chops a long video into captioned vertical clips |
-
-Talking point: none of these are prompts I retype. I wrote the process down once,
-and now it runs. The dev and ship ones will work in your projects. The content
-ones are wired to my paths and my accounts, so treat those as examples.
-
-### Install one
-
-Clone the repo, then link the folder you want:
-
-```bash
-git clone https://github.com/danvega/skills.git
-cd skills
-ln -s "$PWD/skills/dev/readme" "$HOME/.claude/skills/readme"
-```
-
-The link points back at the checkout, so a `git pull` updates the skill. Use
-`cp -R` instead if you would rather copy it. For a team skill, put it in the
-project's `.claude/skills/` and check it in.
+For a team skill, put it in the project's `.claude/skills/` and check it in.
 
 ## MCP
 
@@ -134,7 +72,7 @@ claude mcp list
 
 Or run `/mcp` inside a session to see the server, its tools, and its auth state.
 
-Things to ask it on stage:
+Things to ask it:
 
 ```
 What are my most popular YouTube videos?
@@ -142,7 +80,7 @@ Have I written about Spring Boot 4 yet?
 Where am I speaking next?
 ```
 
-Talking point: I did not train a model on my content. I wrote a small Spring Boot
+I did not train a model on my content. I wrote a small Spring Boot
 app and pointed Claude at it. Any API you own can become an MCP server.
 
 ### One caution
