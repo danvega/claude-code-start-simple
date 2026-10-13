@@ -35,8 +35,7 @@ Claude Code
 
 Mine
 
-- [danvega/skills](https://github.com/danvega/skills), the 36 skills from the
-  skills demo
+- [danvega/skills](https://github.com/danvega/skills), the skills I use every day
 - [danvega/dvaas](https://github.com/danvega/dvaas), my MCP server, built with
   Spring Boot and Spring AI
 - [danvega.dev/mcp](https://www.danvega.dev/mcp), what DVaaS does and how to
